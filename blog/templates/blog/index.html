@@ -1,0 +1,5 @@
+<!-- apps/blog/templates/blog/index.html -->
+{% load hosts %}
+<h2>BLOG主页</h2>
+{#<a href="{% url 'blog:list' %}">进入BLOG列表</a>#}
+<h4><a href="{% host_url 'list' host 'blog' %}">进入BLOG列表（django-hosts）</a></h4>

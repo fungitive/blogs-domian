@@ -1,0 +1,5 @@
+{% load hosts %}
+<h2>BLOG详情</h2>
+<h4><a href="{% host_url 'list' host 'blog' %}">返回BLOG列表</a></h4>
+<b>BLOG正文：</b>
+当前访问的ID：{{ blog_id }}

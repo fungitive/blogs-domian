@@ -1,0 +1,8 @@
+{% load hosts %}
+<h4><a href="{% host_url 'index'   host 'blog' %}">返回BLOG主页</a></h4>
+<ul>
+{#    <li><a href="{% url 'blog:detail' 1 %}">进入BLOG详情1</a></li>#}
+{#    <li><a href="{% url 'blog:detail' 2 %}">进入BLOG详情2</a></li>#}
+    <li><a href="{% host_url 'detail' 1  host 'blog' %}">进入BLOG详情1</a></li>
+    <li><a href="{% host_url 'detail' 2  host 'blog' %}">进入BLOG详情2</a></li>
+</ul>
